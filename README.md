@@ -48,7 +48,7 @@ Dane pobierane są u źródła - ręcznie wprowadza się tylko to, czego nie da 
 | **Uber** - strona www | wymagania i lista modeli pojazdów dopuszczonych w mieście, z kategoriami - pobierane co miesiąc | działa |
 | **Bolt, FreeNow** - strony www | wymagania i listy modeli pojazdów w kategoriach - pobierane co miesiąc | działa |
 | **Firmy taxi** - strony www | wymagania dla pojazdów i kierowców | działa |
-| **Uber, Bolt, FreeNow, firmy taxi** - API flot | dodawanie kierowców i samochodów do flot, zaproszenia dla kierowców | zaplanowane |
+| **Bolt, FreeNow, firmy taxi** - API flot | dodawanie kierowców i samochodów do flot, zaproszenia dla kierowców | zaplanowane |
 | **Operator kart płatniczych** | transakcje z terminali płatniczych przypisane do kierowców | zaplanowane |
 | **Telegram** | boty dla pracowników | działa |
 | **Claude API** (Anthropic) | odczyt dokumentów przez AI | działa |
