@@ -30,6 +30,29 @@ Partner flotowy udostępnia samochody i kierowców aplikacjom przewozowym i firm
 | ![Krok 1 - faktura z KSeF](obrazy/krok_01_faktura_ksef.jpg) | ![Krok 6 - protokół odbioru na tablecie](obrazy/krok_06_protokol_odbioru.jpg) | ![Krok 21 - wydanie samochodu](obrazy/krok_21_wydanie_samochodu.jpg) |
 | Faktura z KSeF → dane samochodu w bazie | Protokół odbioru na tablecie | Wydanie samochodu kierowcy |
 
+## Połączenia z innymi systemami
+
+Dane pobierane są u źródła - ręcznie wprowadza się tylko to, czego nie da się pobrać.
+
+| System | Do czego | Stan |
+|---|---|---|
+| **Gmail** | skany dokumentów przysłane e-mailem trafiają do odczytu; e-maile do kierowców (kody weryfikacyjne, powiadomienia); odbiór e-maili od kierowców przez bota | skany i wysyłka - działa; odbiór - zaplanowane |
+| **SMSAPI** | SMS-y do kierowców (kody weryfikacyjne, przypomnienia); odbiór SMS-ów od kierowców przez bota | wysyłka - działa; odbiór - zaplanowane |
+| **Webfleet** (operator GPS) | przebieg i ewidencja przebiegu, nowe samochody z GPS, przypisanie kierowcy do samochodu przy wydaniu, prognoza rocznego limitu km | zaplanowane |
+| **CEPiK** (API) | dane pojazdów i badań technicznych, uprawnienia kierowców sprawdzane co 24 godziny | zaplanowane |
+| **GUS** - API REGON (BIR) | dane działalności kierowcy: REGON, PKD przewozu taxi | działa |
+| **Biała lista VAT** | weryfikacja NIP kierowcy prowadzącego działalność | działa |
+| **TERYT** (GUS) | adres w jednym formacie, gmina, powiat, właściwy urząd skarbowy | działa |
+| **KSeF** | faktury zakupowe: leasing, montaże (GPS, taksometr, LPG), serwis - dane trafiają do samochodu | zaplanowane |
+| **e-Doręczenia** | pisma z urzędów: licencje, wezwania do wskazania kierującego (mandaty) i odpowiedzi | zaplanowane |
+| **Uber** - strona www | wymagania i lista modeli pojazdów dopuszczonych w mieście, z kategoriami - pobierane co miesiąc | działa |
+| **Bolt, FreeNow** - strony www | wymagania i listy modeli pojazdów w kategoriach - pobierane co miesiąc | działa |
+| **Firmy taxi** - strony www | wymagania dla pojazdów i kierowców | działa |
+| **Uber, Bolt, FreeNow, firmy taxi** - API flot | dodawanie kierowców i samochodów do flot, zaproszenia dla kierowców | zaplanowane |
+| **Operator kart płatniczych** | transakcje z terminali płatniczych przypisane do kierowców | zaplanowane |
+| **Telegram** | boty dla pracowników | działa |
+| **Claude API** (Anthropic) | odczyt dokumentów przez AI | działa |
+
 ## Technologia
 
 Python · boty Telegram · SQLite z historią zmian · odczyt dokumentów przez AI (Claude) · strona podpisów na tablecie (HTTPS) · raporty w Telegram Mini App · serwer VPS w Polsce. Kod powstaje we współpracy z Claude Code.
