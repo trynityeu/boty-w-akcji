@@ -46,6 +46,7 @@ Dane pobierane są u źródła - ręcznie wprowadza się tylko to, czego nie da 
 | **KSeF** | faktury zakupowe: leasing, montaże (GPS, taksometr, LPG), serwis - dane trafiają do samochodu | zaplanowane |
 | **e-Doręczenia** | pisma z urzędów: licencje, wezwania do wskazania kierującego (mandaty) i odpowiedzi | zaplanowane |
 | **Uber** - strona www | wymagania i lista modeli pojazdów dopuszczonych w mieście, z kategoriami - pobierane co miesiąc | działa |
+| **Uber** - raporty z portalu floty | dane o kierowcach i przejazdach z raportów (Uber nie udostępnia API) | zaplanowane |
 | **Bolt, FreeNow** - strony www | wymagania i listy modeli pojazdów w kategoriach - pobierane co miesiąc | działa |
 | **Firmy taxi** - strony www | wymagania dla pojazdów i kierowców | działa |
 | **Bolt, FreeNow, firmy taxi** - API flot | dodawanie kierowców i samochodów do flot, zaproszenia dla kierowców | zaplanowane |
