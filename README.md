@@ -44,7 +44,7 @@ To repozytorium zawiera opis projektu. Kod źródłowy jest prywatny.
 
 ## Autor
 
-**Trynity Sp. z o.o.** - wdrożenia enova365 i integracje AI · [trynity.eu](https://trynity.eu)
+**Trynity Sp. z o.o.** - wdrożenia enova365 i integracje AI
 Mariusz Gajda
 
 ---
